@@ -80,7 +80,7 @@ class TrainInputProcess:
                 exit()
 
     def generate_output_file(self, file_type=0):
-        file_name = 'input_30.pt'
+        file_name = 'input.pt'
         # fine-tune input.pt
         if file_type == 0:
             inputs_dir = None
