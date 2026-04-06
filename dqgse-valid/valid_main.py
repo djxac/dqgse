@@ -121,7 +121,7 @@ def build_compute_metrics_fn(text_inputs, pairs, preds, threshold=0.4) -> Callab
 # set random seed
 set_random_seed(random_seed)
 
-data_input_file = os.path.join("datasets/finetune",task_name,dataset_type,"input_30.pt")
+data_input_file = os.path.join("datasets/finetune",task_name,dataset_type,"input.pt")
 data_inputs = torch.load(data_input_file)
 train_word_ids = data_inputs["train"].word_ids
 train_pairs = data_inputs["train"]["labels"]
